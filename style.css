@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 100px;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: cornflowerblue;
+}
+
+nav a, nav button {
+    font-size: 30px;
+    padding: 20px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    background-color: inherit;
+    color: honeydew;
+}
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: blanchedalmond;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.dropdown-content a {
+    font-size: 18px;
+    padding: 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3px;
+    max-width: 900px;
+}
+
+article {
+    background-color: antiquewhite;
+    grid-column: span 3;
+    min-height: 150px;
+}
+
+article.large {
+    grid-column: span 6;
+}
+
+article.xlarge {
+    grid-column: span 12;
+}
